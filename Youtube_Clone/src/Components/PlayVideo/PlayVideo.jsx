@@ -118,7 +118,7 @@ const PlayVideo = () => {
               <div>
                 <h3>
                   {item.snippet.topLevelComment.snippet.authorDisplayName}{" "}
-                  <span>1 day ago</span>
+                  <span>{moment(item.snippet.topLevelComment.snippet.publishedAt).fromNow()}</span>
                 </h3>
                 <p>{item.snippet.topLevelComment.snippet.textDisplay}</p>
                 <div className="comment-action">
